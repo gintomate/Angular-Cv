@@ -1,0 +1,210 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Téléchargez mon CV en PDF</button>
+
+    <div class="pb-2">
+
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link"> Expériences Professionelles</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+
+                <div style="text-align: center;">
+
+                    <h3 class="mb-0"> Garde-Malade de Nuit</h3>
+                    <p class="text-primary"> Privé, Saint Denis, La Réunion <br>
+                        De février 2021 à octobre 2022</p>
+                    <p class="text-justify">S'occupe d'une personne agée à mobilité réduite: veille sur son sommeil et
+                        sa bonne santé, aide
+                        au repas, aide à la prise de Médicaments. </p>
+
+                    <h3 class="mb-0"> Facteur</h3>
+                    <p class="text-primary"> La Poste, Saint Denis, La Réunion <br>
+                        De septembre 2017 à février 2018</p>
+                    <p class="text-justify">Facteur en Voiture/Vélo/à pied sur plusieurs secteurs de Saint Denis Ville.
+                    </p>
+
+                    <h3 class="mb-0"> Agent de production</h3>
+                    <p class="text-primary"> La Poste PIC, Saint Denis, La Réunion <br>
+                        D'avril 2017 à mai 2017</p>
+                    <p class="text-justify">Tri de colis à la chaîne, vérification de la douane tarifaire. </p>
+
+                    <h3 class="mb-0"> Facteur</h3>
+                    <p class="text-primary"> La Poste, Saint Benoit, La Réunion <br>
+                        D'octobre 2016 à janvier 2017</p>
+                    <p class="text-justify">Facteur en Voiture sur le secteur de la Plaine des Palmistes: tri et
+                        Distribution de Courrier,
+                        vente de produits associés (timbres, colis), remise de colis et lettres recommandés. </p>
+
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Diplômes</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: Center;">
+                    <h3 class="mb-0"> Formation de Développeur Web et Web Mobile</h3>
+                    <p class="text-primary"> Afpar Saint-Denis, Reunion <br>
+                        Depuis septembre 2023 Jusqu'a mai 2024</p>
+                    <p> Formation Développement Web/Web Mobile d'une durée de 8 mois donnant un titre professionnelle de
+                        niveau 5 equivalant à un Bac+2. (En cours)</p>
+
+                    <h3 class="mb-0"> Baccalauréat Economique et Social</h3>
+                    <p class="text-primary"> Lycée Georges Brassens Sainte-Clotilde, Réunion <br>
+                        De septembre 2011 à juin 2012</p>
+
+                </div>
+
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isCertificationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Compétences Informatiques</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h3 class="mb-0"> Methode de travail</h3>
+                    <ul>
+                        <li>Methode Agile : SCRUM</li>
+                        <li>UML</li>
+                    </ul>
+                    <h3 class="mb-0">Maquetter une application</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                    </ul>
+                    <h3 class="mb-0"> Développer une interface utilisateur web dynamique</h3>
+                    <ul>
+                        <li>Html5</li>
+                        <li>CSS3: Bootstrap, SASS</li>
+                        <li>JavaScript: JQuery</li>
+                        <h5>JavaScript Framework:</h5>
+                        <ul>
+                            <li>React: Redux, Recoil.</li>
+                            <li>Angullar.JS</li>
+                        </ul>
+                    </ul>
+
+                    <h3 class="mb-0"> Développer la partie back-end d’une application web ou web mobile</h3>
+                    <ul>
+                        <li>Node.JS</li>
+                        <li>Express.JS</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                    </ul>
+
+                    <h3 class="mb-0"> Développement d'une base de donnée</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDBF</li>
+                        <li>Redis</li>
+                    </ul>
+
+                    <h3 class="mb-0"> Collaborer à la gestion d’un projet informatique et à l’organisation de
+                        l’environnement.</h3>
+                    <ul>
+                        <li>Gitlab</li>
+                        <li>GitHub</li>
+                        <li>Notion</li>
+                        <li>Slack</li>
+                    </ul>
+
+                    <h3 class="mb-0"> Outils</h3>
+                    <ul>
+                        <li>IDE: Workbench ,Visual Studio.</li>
+                        <li>Gestion API: Postman</li>
+                        <li>Diagramme : Visual Paradigm.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isSkillsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Autres infos (Soft Skills, Langues, Centre Intérêt) </div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div style="text-align: left;">
+                    <h3 class="mb-0"> Langues</h3>
+                    <p>Anglais : courant</p>
+                    <p>Allemand : élementaire</p>
+
+                    <h3 class="mb-0"> Soft Sills</h3>
+                    <ul>
+                        <li>Capacité d'Adaptation</li>
+                        <li>Travail en Equipe</li>
+                        <li>Capacité d'Analyse</li>
+                        <li>Autonomie</li>
+                        <li>Esprit Critique</li>
+                    </ul>
+
+                    <h3 class="mb-0"> Centre d'intérêt</h3>
+
+                    <h5>Jeux Vidéos</h5>
+                    <ul>
+                        <li>Jeux de strategie : Stellaris, Civilization 4 et 5, XCom.</li>
+                        <li>Rpgs Japonais: Final Fantasy VII, XII, Xenoblade Chronicle, Dark Chronicle.</li>
+                        <li>Western Rpgs : Fallout , Mass Effect , Elder Scrolls.</li>
+                        <li>Jeux de Gestion : Rimworld, Football Manager, Stardew Valley.
+                            Sports</li>
+                    </ul>
+
+                    <h5>Sports</h5>
+                    <ul>
+                        <li>Football <br>
+                            Equipe favorite : FC Nantes</li>
+                        <li> Basketball <br>
+                            Equipe favorite : Spurs de San Antonio</li>
+                    </ul>
+
+                    <h5>Echecs</h5>
+
+                    <ul>
+                        <li>Chess.com : <br>
+                            Blitz: 1800</li>
+                        <li>Lichess.org : <br>
+                            Blitz: 1800
+                            Bullet: 1900
+                        </li>
+                    </ul>
+
+                    <h5>Anime Japonais</h5>
+                    <p>Serie preferée : One Piece , GTO, Gintama, HXH , Full Metal Alchemist.</p>
+                </div>
+
+            </accordion-group>
+
+        </accordion>
+    </div>
+</div>

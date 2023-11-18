@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+
+        <!-- About Me -->
+        <div class="col-lg shadow border m-1 cart">
+            <div class="text-center">
+                <h2>A propos de Moi</h2>
+                <img src="../../assets/Default_pfp.svg.png" alt="profile picture" width="256" height="256"
+                    class="rounded-circle">
+                <p>Ayant toujours nourri une passion pour l'informatique, j'ai récemment pris la décision de devenir
+                    développeur informatique après avoir travaillé dans divers domaines. Ma formation à l'Afpar
+                    (équivalent à bac+2) m'a permis d'acquérir des bases solides dans ce domaine. De plus, ma nature
+                    autodidactique et mon immersion précoce dans l'informatique, depuis l'âge de 8 ans avec l'obtention
+                    de mon premier PC, ont forgé un lien profond avec cet univers.
+                    <br>
+                    Forte de mes études approfondies et de ma passion inébranlable pour l'informatique, je dispose des
+                    connaissances nécessaires pour exceller dans ce domaine. Mon engagement envers l'apprentissage
+                    continu et ma volonté d'apporter une perspective novatrice font de moi un candidat enthousiaste,
+                    prêt à relever de nouveaux défis. Ce portfolio vous offre l'opportunité de mieux me connaître et
+                    d'évaluer mes compétences.
+                </p>
+            </div>
+        </div>
+
+        <!-- Featured Project -->
+        <div class="col-lg shadow border m-1 cart">
+            <div class="text-center">
+                <h2>Projet en Vedette</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide> <img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visité la section portfolio pour en voir plus!</p>
+        </div>
+    </div>
+</div>
